@@ -1,0 +1,47 @@
+.section.description {
+    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width:1200px) {
+            display: block;
+        }
+}
+
+.description__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.description__element {
+    width: 100%;
+
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.description__pic {
+    position: relative;
+
+}
+
+.description__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    bottom: 0;
+
+    position: absolute;
+    width: 100%;
+
+    color: var(--title-text-color);
+    background: rgba(47, 48, 58, 0.8);
+
+}

@@ -1,0 +1,50 @@
+.section.privilege {
+    display: flex;
+}
+
+.privilege__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+.privilege__item {
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+           
+            width: calc((100% - 30px) / 2);
+        }
+    
+    @media screen and (min-width:1200px) {
+            
+            width: calc((100% - 90px) / 4);
+        }
+    
+}
+.privilege__icon {
+    background: #F5F4FA;
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.privilege__title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.privilege__text {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--primery-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
