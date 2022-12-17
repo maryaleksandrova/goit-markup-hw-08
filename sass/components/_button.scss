@@ -109,12 +109,10 @@
         &:focus {
             background-color: #188CE8;
         }
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
                     display: flex;
                 }
-        // @media screen and (min-width:1200px) {
-        //     display: flex;
-        // }
+        
 }
 
 .modal__btn-close {

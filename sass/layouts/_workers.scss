@@ -1,5 +1,7 @@
 .section.workers {
     background: #F5F4FA;
+   
+
 }
 .workers__box {
     display: flex;
@@ -16,7 +18,8 @@
     border-radius: 0px 0px 4px 4px;
     width: 100%;
     
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+            
             width: calc((100% - 30px) / 2);
         }
     @media screen and (min-width:1200px) {

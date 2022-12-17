@@ -8,8 +8,9 @@
 }
 
 .clients__list {
-    width: 100%;
-    @media screen and (min-width:480px) {
+    // width: 100%;
+    @media screen and (min-width:320px) {
+        max-width: 480px;
     width: calc((100% - 30px)/2);
     }
     @media screen and (min-width:768px) {
