@@ -39,9 +39,13 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (min-width:320px) and (max-width:767px) {
         display: flex;    
         justify-content: center;
+        }
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            display: flex;
+            justify-content: center;
         }
 
 }

@@ -123,7 +123,7 @@ header {
 }
 .mob-menu {
     position: fixed;
-        
+    top: 0;   
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
@@ -135,7 +135,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: auto;
+        // overflow: auto;
     }
         @media screen and (min-width:768px) {
             display: none;
@@ -241,7 +241,8 @@ padding: 0;
     display: flex;
     gap: 20px;
     padding: 0;
-
+    overflow: auto;
+    flex-wrap: wrap;
 }
 
 .mob-soc__link {

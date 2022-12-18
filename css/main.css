@@ -371,6 +371,7 @@ header {
 
 .mob-menu {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
@@ -383,7 +384,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -482,6 +482,8 @@ header {
   display: flex;
   gap: 20px;
   padding: 0;
+  overflow: auto;
+  flex-wrap: wrap;
 }
 
 .mob-soc__link {
@@ -645,7 +647,6 @@ header {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -663,11 +664,7 @@ header {
 .modal__form {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
-  .modal__form {
-    width: 448px;
-  }
+  width: 100%;
 }
 
 .modal__field {
@@ -739,19 +736,21 @@ header {
 
 .modal__checkbox {
   position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .modal__checkbox-input {
   position: absolute;
-  display: flex;
-  left: 0;
-  opacity: 0;
-  width: 16px;
-  height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -759,6 +758,7 @@ header {
 
 .modal__checkbox-label {
   display: flex;
+  -webkit-box-align: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -770,25 +770,21 @@ header {
     line-height: 1.71;
   }
 }
-@media screen and (min-width: 433px) and (max-width: 449px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__checkbox-label {
     font-size: 12px;
     line-height: 1;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 434px) {
-  .modal__checkbox-label {
-    font-size: 9px;
-    line-height: 1;
-  }
+
+.button.send {
+  margin-top: 30px;
 }
 
-.modal__checkbox-label span {
+.modal__checkbox-label > span {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
-  transform: translateY(0);
   fill: transparent;
   width: 16px;
   height: 15px;
@@ -799,26 +795,17 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
-  .modal__checkbox-label span {
-    top: 50%;
-    transform: translateY(25%);
-  }
-}
-.modal__checkbox-input:checked + .modal__checkbox-label span {
+.modal__checkbox-input:checked + .modal__checkbox-label > span {
   background-color: var(--accent-color);
   border: none;
   fill: var(--title-text-color);
 }
-.modal__checkbox-input:hover + .modal__checkbox-label span, .modal__checkbox-input:focus + .modal__checkbox-label span {
+.modal__checkbox-input:hover + .modal__checkbox-label > span, .modal__checkbox-input:focus + .modal__checkbox-label > span {
   border: 2px solid var(--accent-color);
 }
 
 .modal__checkbox-icon {
-  position: absolute;
   display: flex;
-  top: 50%;
-  transform: translateY(-50%);
   justify-content: flex-start;
   background-position: center;
 }
@@ -827,7 +814,6 @@ header {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
-  margin-left: 5px;
   cursor: pointer;
 }
 
@@ -898,7 +884,13 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .privilege__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .privilege__title {
     display: flex;
     justify-content: center;
@@ -1190,6 +1182,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  align-items: baseline;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container.footer {
