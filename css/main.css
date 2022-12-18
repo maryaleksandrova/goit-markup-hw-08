@@ -571,7 +571,7 @@ header {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section.hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_desktopx2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img_desktopx2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -887,13 +887,7 @@ header {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .privilege__title {
     display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .privilege__title {
-    display: flex;
-    justify-content: center;
+    text-align: left;
   }
 }
 

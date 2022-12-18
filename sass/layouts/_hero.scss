@@ -34,7 +34,7 @@
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img_desktopx2.jpg");
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img_desktopx2.jpg");
             }
         }
     @media screen and (min-width:1200px) {
@@ -277,10 +277,7 @@
             border: 2px solid var(--accent-color);
         }
 }
-.modal__checkbox-text {
-    
-    
-}
+
 .modal__checkbox-icon {
     // position: absolute;
     display: flex;
