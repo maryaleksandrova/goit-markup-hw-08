@@ -887,7 +887,7 @@ header {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .privilege__title {
     display: flex;
-    text-align: center;
+    justify-content: center;
   }
 }
 
